@@ -1,0 +1,53 @@
+body {
+    background-color: $title-background-light-color;
+    font-family: $main-font;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: $description-color;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+
+    color: $title-dark-color;
+}
+
+img {
+    display: block;
+}
+
+.link {
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.list {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.specialization-title,
+.specialization-list-item,
+.team-title,
+.team-member,
+.team-position,
+.customers-title {
+    margin-top: 0px;
+}
+
+/*-всі праві відступи по 30 пікселів для списків-*/
+.header-address-item:not(:last-child),
+.features-list-item:not(:last-child),
+.specialization-list-item:not(:last-child),
+.team-list-item:not(:last-child),
+.customers-title-list-item:not(:last-child) {
+    margin-right: 30px;
+}

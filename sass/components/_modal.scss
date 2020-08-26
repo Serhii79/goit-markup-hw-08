@@ -1,0 +1,165 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    @extend %flex-alcenter;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+.hero-form { 
+    position: relative;
+    @extend %flex-alcenter;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+
+    background-color: $title-background-light-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.hero-form-head {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+
+    color: $title-dark-color;
+}
+
+.label-input-item {
+    position: relative;
+    margin-bottom: 28px;
+}
+
+.contact-lable {
+    position: absolute;
+    top: 50%;
+    left: 42px;
+    transform: translateY(-50%);
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+    text-align: left;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .form-input:focus + &,
+    .form-input:not(:placeholder-shown) + & {
+        transform: translate(-40px, -40px);
+        color: $accent-color;
+    }
+}
+
+.contact-form {
+    display: block;       
+    width: 404px;
+    height: 38px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    &:not(:placeholder-shown) {
+        border-color: $accent-color;
+        outline: none;
+    }
+}
+
+.form-input {
+    padding: 0px;
+    padding-left: 42px;
+}
+
+.input-label-icon {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+    /*transform: translate(-50% -18px);*/
+    fill: $title-dark-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .form-input:focus ~ & {
+        fill: $accent-color;
+    }
+    
+}
+
+.form-comment {
+    width: 414px;
+    height: 94px;
+    margin: 0px;
+    padding: 12px 16px;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+    resize: none;
+}
+
+.hero-form-agreement {    
+    position: relative;
+    @extend %flex-alcenter;
+    margin-bottom: 30px;
+
+    a {
+        line-height: 24px;
+        color: $accent-color;
+        /* identical to box height, or 171% */
+    }    
+}
+
+.agreement-checkbox-hidden {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0px;
+    padding: 0px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.agreement-checkbox {
+    display: inline-block;
+    margin-right: 8px;
+    border-radius: 2px;
+    background-color: $title-background-light-color;
+    fill: $title-background-light-color;
+    transition: z-index 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .agreement-checkbox-hidden:checked + & {
+        background-color: $accent-color;
+    }
+}
+
+.agreement-checkbox-nochecked {
+    display: inline-block;
+    position: absolute;
+    top: 4px;
+    left: -1px;
+    transform: translate(-50% -50%);
+    border-radius: 2px;
+    background-color: $title-background-light-color;
+    opacity: 1;
+    transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .agreement-checkbox-hidden:checked ~ & {
+        opacity: 0;
+    }
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}

@@ -1,0 +1,28 @@
+.text-logo {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;    
+    /* identical to box height */
+    margin-right: 85px;
+    
+    color: $accent-color;
+}
+
+.text-logo-black {
+    color: $title-dark-color;
+}
+
+.text-logo-white {
+    color: $title-background-light-color;
+}
+
+.customers-link-item {
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .customers-title-list-item:hover &,
+    .customers-title-list-item:focus & {
+        fill: $accent-color;
+    }
+}

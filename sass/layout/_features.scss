@@ -1,0 +1,46 @@
+.features {
+    padding-bottom: 0px;
+}
+
+.features-list {
+    @extend %flex-marg0;
+}
+
+.features-list-item {
+    width: 270px;
+    height: 251px;
+}
+
+.features-list-item-picture {
+    @extend %flex-alcenter;
+    padding: 25px 100px;
+    justify-content: center;
+
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
+.features-list-item-picture-icon {
+    width: 70px;
+    height: 70px;
+}
+
+.features-picture {
+    font-size: 0px;
+}
+
+.features-description-title {
+    font-weight: bold;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    color: $title-dark-color;
+}
+
+.features-description {
+    margin: 0px;
+    padding-top: 10px;
+    line-height: 1.71;
+    /* or 171% */
+}

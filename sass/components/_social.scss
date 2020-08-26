@@ -1,0 +1,32 @@
+.social-links-list {
+    width: 206px;
+    height: 44px;
+    display: flex;    
+    margin: 0px auto;
+}
+
+.social-links-item-link {
+    @extend %flex-alcenter;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
+}
+
+
+
+.social-links-item-link-icon {
+    width: 20px;
+    height: 20px;
+    padding: 12px 12px;
+}
+
+.social-links-list-item:not(:last-child) {
+    margin-right: 10px;
+}

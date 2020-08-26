@@ -1,0 +1,30 @@
+.customers .container {
+    height: 182px;
+}
+
+.customers-title-list {
+    @extend %flex-marg0;
+}
+
+.customers-title-list-item {    
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customers-title {
+    margin-bottom: 50px;
+}
+
+.customers-link {
+    @extend %flex-alcenter;
+    justify-content: center;
+    width: 170px;
+    height: 90px;    
+}
+
+.customers-title-list-item:hover,
+.customers-title-list-item:focus {
+    border: 1px solid $accent-color;
+}
