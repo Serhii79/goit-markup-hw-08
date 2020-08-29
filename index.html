@@ -12,50 +12,58 @@
     <!--header-->
     <header class="header">
         <div class="container">
-            <nav class="navigation">
-                <a class="text-logo link" href="./index.html" lang="en">
-                    Web <span class="text-logo-black">Studio</span>
-                </a>
-                <ul class="navigation-list list">
-                    <li class="navigation-list-item">
-                        <a class="navigation-list-item-link link currently" href="./index.html">Студия</a>
-                    </li>
-                    <li class="navigation-list-item">
-                        <a class="navigation-list-item-link link" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="navigation-list-item">
-                        <a class="navigation-list-item-link link" href="">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <address class="header-address">
-                <div class="header-address-item-list">
-                    <ul class="header-address-list list">
-                        <li class="header-address-item">                            
-                            <a class="header-address-item-link link" href="mailto:info@devstudio.com" lang="en">
-                                <svg class="header-address-item-link-icon" width="16" height="11">
-                                    <use href="./images-studio/sprite.svg#post"></use>
-                                </svg>
-                                info@devstudio.com                                
-                            </a>
+            <a class="text-logo link" href="./index.html" lang="en">
+                Web <span class="text-logo-black">Studio</span>
+            </a>
+            <button type="button" class="header-menu" aria-expanded="false" aria-controls="header-nav-address" data-menu-button>
+                <svg width="40" height="40" class="header-menu-icon">
+                    <use class="icon-menu" href="./images-studio/sprite.svg#header-menu"></use>
+                    <use class="icon-close" href="./images-studio/sprite.svg#header-close"></use>
+                </svg>
+            </button>
+            <div class="header-nav-address" data-menu>
+                <nav class="navigation">
+                    <ul class="navigation-list list">
+                        <li class="navigation-list-item">
+                            <a class="navigation-list-item-link link currently" href="./index.html">Студия</a>
                         </li>
-                        <li class="header-address-item">                            
-                            <a class="header-address-item-link link" href="tel:+380961111111">
-                                <svg class="header-address-item-link-icon" width="10" height="15">
-                                    <use href="./images-studio/sprite.svg#mobile"></use>
-                                </svg>
-                                +38 096 111 11 11
-                            </a>
+                        <li class="navigation-list-item">
+                            <a class="navigation-list-item-link link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="navigation-list-item">
+                            <a class="navigation-list-item-link link" href="">Контакты</a>
                         </li>
                     </ul>
-                </div>                       
-            </address>
+                </nav>
+                <address class="header-address">
+                    <div class="header-address-item-list">
+                        <ul class="header-address-list list">
+                            <li class="header-address-item">                            
+                                <a class="header-address-item-link link" href="mailto:info@devstudio.com" lang="en">
+                                    <svg class="header-address-item-link-icon" width="16" height="11">
+                                        <use href="./images-studio/sprite.svg#post"></use>
+                                    </svg>
+                                    info@devstudio.com                                
+                                </a>
+                            </li>
+                            <li class="header-address-item">                            
+                                <a class="header-address-item-link link" href="tel:+380961111111">
+                                    <svg class="header-address-item-link-icon" width="10" height="15">
+                                        <use href="./images-studio/sprite.svg#mobile"></use>
+                                    </svg>
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                        </ul>
+                    </div>                       
+                </address>
+            </div>
         </div>        
     </header>
     <!--main-->
-    <main class="main">
+    <!--main class="main"-->
         <!--hero-->
-        <section class="main-section hero">
+        <!--section class="main-section hero">
                 <h1 class="hero-title">
                     эффективные решения<br />
                     для вашего бизнеса
@@ -63,9 +71,9 @@
                 <div class="hero-button">
                     <button data-modal-open class="hero-btn">Заказать услугу</button>
                 </div>                                                                                
-        </section>
+        </section-->
         <!--features-->
-        <section class="main-section features">
+        <!--section class="main-section features">
             <div class="container">
                 <ul class="features-list list">
                     <li class="features-list-item">
@@ -115,9 +123,9 @@
                     </li>
                 </ul>
             </div>            
-        </section>
+        </section-->
         <!--specialization-->
-        <section class="main-section specialization">
+        <!--section class="main-section specialization">
             <div class="container">                    
                 <h2 class="specialization-title title">Чем мы занимаемся</h2>
                 <ul class="specialization-list list">
@@ -141,9 +149,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section-->
         <!--team-->
-        <section class="main-section team">
+        <!--section class="main-section team">
             <h2 class="team-title title">Наша команда</h2>
             <ul class="team-list list">
                 <li class="team-list-item">
@@ -287,9 +295,9 @@
                 </ul>
                 </li>
             </ul>
-        </section>
+        </section-->
         <!--customers-->
-        <section class="main-section customers">
+        <!--section class="main-section customers">
             <div class="container">
                 <h2 class="customers-title title">Постоянные клиенты</h2>
                 <ul class="customers-title-list list">
@@ -337,10 +345,10 @@
                     </li>
                 </ul>
             </div>                    
-        </section>
-    </main>
+        </section-->
+    <!--/main-->
     <!--footer-->
-    <footer class="footer">
+    <!--footer class="footer">
         <div class="container">
             <div class="footer-navigation-social-list">
                 <nav class="footer-navigation">
@@ -412,8 +420,9 @@
                 </ul>
             </form>
         </div>        
-    </footer>
-    <div data-modal class="backdrop is-hidden">
+    </footer-->
+    <!--modal-->
+    <!--div data-modal class="backdrop is-hidden">
         <form class="hero-form">                            
             <p class="hero-form-head">Оставьте свои данные, мы вам перезвоним</p>
             <button data-modal-close type="button" class="form-close-button">
@@ -445,7 +454,6 @@
             <div class="label-input-item">
                 <textarea name="comment" class="contact-form form-comment" id="comment" placeholder="Комментарий"></textarea>
             </div>
-            <!--потрібно розмістити умови договору-->
             <label class="hero-form-agreement">
                 <input type="checkbox" name="agreement" value="agree" class="agreement-checkbox-hidden">
                 <svg class="agreement-checkbox" width="16" height="15">
@@ -461,7 +469,8 @@
             </label>
             <button type="submit" class="hero-btn">Отправить</button>                            
         </form>
-    </div>
+    </div-->
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
