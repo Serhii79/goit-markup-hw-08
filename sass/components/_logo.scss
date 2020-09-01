@@ -1,12 +1,18 @@
 .text-logo {
     font-family: Raleway;
     font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;    
+    font-size: 24px;
+    line-height: 1.166;    
     /* identical to box height */
-    margin-right: 85px;
+    margin-right: 81px;
     
     color: $accent-color;
+
+@media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+    margin-right: 85px;
+}
 }
 
 .text-logo-black {
