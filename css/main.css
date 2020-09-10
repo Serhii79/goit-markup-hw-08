@@ -156,10 +156,6 @@ footer .container {
   margin-right: 10px;
 }
 
-.hero-button {
-  padding-top: 30px;
-}
-
 .hero-btn {
   width: 200px;
   height: 50px;
@@ -665,6 +661,12 @@ footer .container {
   background-position: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+  }
+}
+
 .hero .container {
   padding-top: 118px;
   padding-bottom: 118px;
@@ -681,18 +683,22 @@ footer .container {
 
 .hero-title {
   font-size: 26px;
-  line-height: 42px;
+  line-height: 1.62;
   /* or 162% */
   font-weight: 900;
+  margin: 0px auto;
+  margin-bottom: 30px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .hero-title {
-    height: 84px;
+    font-size: 44px;
+    line-height: 1.36;
+    /* or 136% */
   }
 }
 

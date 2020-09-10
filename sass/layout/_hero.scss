@@ -21,6 +21,10 @@
     background-size: cover;
     background-position: center;
 
+    @media screen and (min-width: 1200px) {
+        height: 600px;
+    }
+
     .container {
         padding-top: 118px;
         padding-bottom: 118px;
@@ -37,21 +41,23 @@
 
 .hero-title {
     font-size: 26px;
-    line-height: 42px;
+    line-height: 1.62;
     /* or 162% */
-
-    font-weight: 900;
-    
-    // margin: 0px auto;
+    font-weight: 900;    
+    margin: 0px auto;
+    margin-bottom: 30px;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     
     color: $title-background-light-color;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+        /* or 136% */
         // max-width: 360px;
-        height: 84px;
+        // height: 84px;
     }
 }
 
