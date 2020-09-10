@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.features-list, .specialization-list, .customers-title-list, .footer-form-list, .portfolio-btn-list, .portfolio-main-list {
+.specialization-list, .customers-title-list, .footer-form-list, .portfolio-btn-list, .portfolio-main-list {
   display: flex;
   margin: 0px;
 }
@@ -85,8 +85,15 @@ footer .container {
 }
 
 .main-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .text-logo {
@@ -455,7 +462,7 @@ footer .container {
 }
 
 .navigation {
-  margin-bottom: 60px;
+  margin-bottom: 52px;
 }
 
 @media screen and (min-width: 768px) {
@@ -576,6 +583,8 @@ footer .container {
 
 .header-address-item-link {
   position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
   font-weight: 500;
   font-style: normal;
   font-size: 18px;
@@ -702,17 +711,14 @@ footer .container {
   }
 }
 
-.features {
-  padding-bottom: 0px;
-}
-
-.features-list-item {
-  width: 270px;
-  height: 251px;
+.features-list-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .features-list-item-picture {
-  padding: 25px 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
   justify-content: center;
   background: #F5F4FA;
   border-radius: 4px;
@@ -723,22 +729,17 @@ footer .container {
   height: 70px;
 }
 
-.features-picture {
-  font-size: 0px;
-}
-
 .features-description-title {
   font-weight: bold;
   line-height: 1.14;
   text-transform: uppercase;
-  margin-top: 30px;
-  margin-bottom: 0px;
+  text-align: center;
+  margin-bottom: 10px;
   color: #212121;
 }
 
 .features-description {
   margin: 0px;
-  padding-top: 10px;
   line-height: 1.71;
   /* or 171% */
 }
