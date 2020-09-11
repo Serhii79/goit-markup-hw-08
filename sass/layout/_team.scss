@@ -1,6 +1,5 @@
 .team {
-    background-color: $background-team-color;
-    height: 514px;
+    background-color: $background-button-portfolio-color;
 
     .social-links-item-link-icon {
         fill: #afb1b8;
@@ -13,27 +12,81 @@
     }
 }
 
+// .team {
+//     background-color: $background-team-color;
+//     height: 514px;
+
+//     .social-links-item-link-icon {
+//         fill: #afb1b8;
+//         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+//         &:hover,
+//         &:focus {
+//             fill: $title-background-light-color;
+//         }
+//     }
+// }
+
 .team-title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
 }
+// .team-title {
+//     margin-bottom: 50px;
+// }
 
 .team-list {
-    width: 1170px;
-    height: 422px;
-    display: flex;
-    margin: 0px auto;
+    margin: 0px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
+// .team-list {
+//     width: 1170px;
+//     height: 422px;
+//     display: flex;
+//     margin: 0px auto;
+// }
 
 .team-item {
     margin-bottom: 30px;
 }
 
 .team-list-item {
-    width: 270px;
-    height: 422px;
+    // width: 270px;
+    // height: 422px;
+    // margin: 0px;
     background-color: $title-background-light-color;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 0px 0px 4px 4px;
+
+    @media screen and (min-width: 280px) and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 354px;
+        margin-bottom: 30px;
+
+        &:nth-child(odd) {
+            margin-right: 30px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+        
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
 }
 
 .team-member,
@@ -59,3 +112,38 @@
 .team-social-list {
     padding-bottom: 24px;
 }
+// .team-item {
+//     margin-bottom: 30px;
+// }
+
+// .team-list-item {
+//     width: 270px;
+//     height: 422px;
+//     background-color: $title-background-light-color;
+//     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+//     border-radius: 0px 0px 4px 4px;
+// }
+
+// .team-member,
+// .team-position {
+//     font-size: 16px;
+//     line-height: 1.18;
+//     /* identical to box height */
+//     text-align: center;
+//     text-transform: capitalize;
+// }
+
+// .team-position {
+//     margin-bottom: 16px;
+// }
+
+// .team-member {
+//     font-weight: 500;
+//     margin-bottom: 10px;
+    
+//     color: $title-dark-color;
+// }
+
+// .team-social-list {
+//     padding-bottom: 24px;
+// }
