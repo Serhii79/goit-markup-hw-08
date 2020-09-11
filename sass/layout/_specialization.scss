@@ -1,5 +1,13 @@
-.specialization .container {
-    height: 386px;
+.specialization {
+    padding-top: 0px;
+
+    @media screen and (min-width: 280px) and (max-width: 1199px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
 }
 
 .specialization-title {
@@ -14,6 +22,10 @@
     width: 370px;
     height: 294px;
     margin-bottom: 0px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .specialization-item {

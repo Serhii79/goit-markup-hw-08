@@ -781,8 +781,20 @@ footer .container {
   /* or 171% */
 }
 
-.specialization .container {
-  height: 386px;
+.specialization {
+  padding-top: 0px;
+}
+
+@media screen and (min-width: 280px) and (max-width: 1199px) {
+  .specialization {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .specialization {
+    display: block;
+  }
 }
 
 .specialization-title {
@@ -793,6 +805,10 @@ footer .container {
   width: 370px;
   height: 294px;
   margin-bottom: 0px;
+}
+
+.specialization-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .specialization-item {
