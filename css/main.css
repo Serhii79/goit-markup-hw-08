@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.specialization-list, .customers-title-list, .footer-form-list, .portfolio-btn-list, .portfolio-main-list {
+.specialization-list, .customers-title-list, .portfolio-btn-list, .portfolio-main-list {
   display: flex;
   margin: 0px;
 }
@@ -85,13 +85,6 @@ img {
   }
 }
 
-footer .container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  padding: 60px 0px;
-}
-
 .main-section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -112,7 +105,6 @@ footer .container {
   line-height: 1.166;
   /* identical to box height */
   letter-spacing: 0.02em;
-  margin-right: 81px;
   color: #2196F3;
 }
 
@@ -122,6 +114,14 @@ footer .container {
     line-height: 1.19;
     margin-right: 85px;
   }
+}
+
+.header-logo {
+  margin-right: 81px;
+}
+
+.footer-logo {
+  margin: 0px auto;
 }
 
 .text-logo-black {
@@ -1010,16 +1010,23 @@ footer .container {
   background-color: #2F303A;
 }
 
-.footer-navigation-social-list:nth-child(1) {
-  margin-right: 69px;
+.footer .container {
+  padding: 60px 0px;
 }
 
-.footer-navigation-social-list:nth-child(2) {
-  margin-right: 94px;
+.navigation-address {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.navigation-social {
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 .footer-navigation {
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .footer-address-list-item:not(:last-child) {
@@ -1061,36 +1068,11 @@ footer .container {
   background-color: #2196F3;
 }
 
-.footer-form {
-  width: 570px;
-  height: 86px;
-}
-
-.footer-form-list-item:not(:last-child) {
-  margin-right: 12px;
-}
-
-.footer-form-mail input {
-  font-size: 16px;
-  line-height: 20px;
-  width: 326px;
-  margin: 0px;
-  padding: 14px 15px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  background-color: transparent;
-  border-radius: 4px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-form-mail input:hover, .footer-form-mail input:focus {
-  border-color: #2196F3;
-  outline: none;
-}
-
 .footer-form-telegram {
   position: relative;
 }
 
+/*copy*/
 .portfolio {
   padding-top: 93px;
 }

@@ -6,7 +6,6 @@
     line-height: 1.166;    
     /* identical to box height */
     letter-spacing: 0.02em;
-    margin-right: 81px;
     
     color: $accent-color;
 
@@ -15,6 +14,14 @@
         line-height: 1.19;
         margin-right: 85px;
     }
+}
+
+.header-logo {
+    margin-right: 81px;
+}
+
+.footer-logo {
+    margin: 0px auto;
 }
 
 .text-logo-black {

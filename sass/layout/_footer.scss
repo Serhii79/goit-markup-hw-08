@@ -1,17 +1,32 @@
 .footer {
     background-color: $background-footer-color;
+
+    .container {
+        padding: 60px 0px;
+    }
 }
 
-.footer-navigation-social-list:nth-child(1) {
-    margin-right: 69px;
+.navigation-address {
+    margin-bottom: 60px;
+    text-align: center;
 }
 
-.footer-navigation-social-list:nth-child(2) {
-    margin-right: 94px;
+.navigation-social {
+    margin-bottom: 60px;
+    text-align: center;
 }
+
+// .footer-navigation-social-list:nth-child(1) {
+//     margin-right: 69px;
+// }
+
+// .footer-navigation-social-list:nth-child(2) {
+//     margin-right: 94px;
+// }
 
 .footer-navigation {
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .footer-address-list-item:not(:last-child) {
@@ -60,37 +75,136 @@
 
 
 
-.footer-form {
-    width: 570px;
-    height: 86px;
-}
+// .footer-form {
+//     width: 570px;
+//     height: 86px;
+// }
 
-.footer-form-list {
-    @extend %flex-marg0;
-}
+// .footer-form-list {
+//     @extend %flex-marg0;
+// }
 
-.footer-form-list-item:not(:last-child) {
-    margin-right: 12px;
-}
+// .footer-form-list-item:not(:last-child) {
+//     margin-right: 12px;
+// }
 
-.footer-form-mail input {
-    font-size: 16px;
-    line-height: 20px;
-    width: 326px;
-    margin: 0px;
-    padding: 14px 15px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background-color: transparent;
-    border-radius: 4px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// .footer-form-mail input {
+//     font-size: 16px;
+//     line-height: 20px;
+//     width: 326px;
+//     margin: 0px;
+//     padding: 14px 15px;
+//     border: 1px solid rgba(255, 255, 255, 0.3);
+//     background-color: transparent;
+//     border-radius: 4px;
+//     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-        border-color: $accent-color;
-        outline: none;
-    }
-}
+//     &:hover,
+//     &:focus {
+//         border-color: $accent-color;
+//         outline: none;
+//     }
+// }
 
 .footer-form-telegram {
     position: relative;
 }
+
+
+/*copy*/
+// .footer {
+//     background-color: $background-footer-color;
+// }
+
+// .footer-navigation-social-list:nth-child(1) {
+//     margin-right: 69px;
+// }
+
+// .footer-navigation-social-list:nth-child(2) {
+//     margin-right: 94px;
+// }
+
+// .footer-navigation {
+//     margin-bottom: 8px;
+// }
+
+// .footer-address-list-item:not(:last-child) {
+//     margin-bottom: 9px;
+// }
+
+// /* text-logo link прописан в header */
+
+// .footer-address-list {
+//     font-style: normal;
+//     margin: 0px;
+
+//     color: $title-background-light-color;
+// }
+
+// .footer-address-item {
+//     line-height: 1.71;
+//     /* or 171% */
+
+//     color: $footer-address-item-color;
+// }
+
+// .footer-social-title {
+//     font-weight: bold;
+//     line-height: 1.14;
+//     text-transform: uppercase;
+//     margin-top: 0px;
+//     margin-bottom: 20px;
+
+//     color: $title-background-light-color;
+// }
+
+// .footer .social-links-item-link-icon {
+//     fill: $title-background-light-color;
+// }
+
+// .footer .social-links-item-link {
+//     background-color: $description-color;
+//     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//     &:hover,
+//     &:focus {
+//         background-color: $accent-color;
+//     }
+// }
+
+
+
+// .footer-form {
+//     width: 570px;
+//     height: 86px;
+// }
+
+// .footer-form-list {
+//     @extend %flex-marg0;
+// }
+
+// .footer-form-list-item:not(:last-child) {
+//     margin-right: 12px;
+// }
+
+// .footer-form-mail input {
+//     font-size: 16px;
+//     line-height: 20px;
+//     width: 326px;
+//     margin: 0px;
+//     padding: 14px 15px;
+//     border: 1px solid rgba(255, 255, 255, 0.3);
+//     background-color: transparent;
+//     border-radius: 4px;
+//     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//     &:hover,
+//     &:focus {
+//         border-color: $accent-color;
+//         outline: none;
+//     }
+// }
+
+// .footer-form-telegram {
+//     position: relative;
+// }
